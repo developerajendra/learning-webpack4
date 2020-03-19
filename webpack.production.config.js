@@ -82,10 +82,25 @@ module.exports = {
             ]
         }),
         new HtmlWebpackPlugin({
-            title: 'Working from Home - Learning the webpack 4',
-            template:'src/index.hbs',
-            description:'some awesome description',
-            // filename:'otherfolder/custom_filename.html',
+            title: 'Hello World - Learning the webpack 4',
+            template:'src/page-template.hbs',
+            description:'hellow world some awesome description',
+            filename:'hello-world.html',
+            chunks:[
+                'hello-world'
+            ]
+            // meta:{
+            //     description: 'some meta description'
+            // }
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Temple - Learning the webpack 4',
+            template:'src/page-template.hbs',
+            chunks:[
+                'temple'
+            ],
+            description:'temple some awesome description',
+            filename:'temple.html',
             // meta:{
             //     description: 'some meta description'
             // }
