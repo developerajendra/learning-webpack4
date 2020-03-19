@@ -1,6 +1,6 @@
 // import helloWorld from './hello-world.js';
 // import helloWorld from './components/hello-world-button/hello-world';
-import addImage from './components/add-image';
+// import addImage from './components/add-image';
 import HelloWorldButton from './components/hello-world-button/hello-world-button.js';
 import Heading from './components/heading/heading';
 
