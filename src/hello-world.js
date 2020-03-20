@@ -1,3 +1,5 @@
+// import _ from 'lodash';
+import React from 'react';
 // import helloWorld from './hello-world.js';
 // import helloWorld from './components/hello-world-button/hello-world';
 // import addImage from './components/add-image';
@@ -7,7 +9,7 @@ import Heading from './components/heading/heading';
 const helloWorldButton = new HelloWorldButton();
 const heading = new Heading();
 helloWorldButton.render();
-heading.render();
+heading.render('hello World page');
 
  
 // helloWorld();

@@ -15,6 +15,13 @@ module.exports = {
         publicPath:''
     },
     mode:'production',
+    optimization:{
+        splitChunks:{
+            chunks: 'all',
+            minSize:10000,
+            automaticNameDelimiter:'_'
+        }
+    },
     module: {
         rules:[
             // {
@@ -87,7 +94,7 @@ module.exports = {
             description:'hellow world some awesome description',
             filename:'hello-world.html',
             chunks:[
-                'hello-world'
+                'hello-world', 'vendors~hello-world~temple'
             ]
             // meta:{
             //     description: 'some meta description'
@@ -97,7 +104,7 @@ module.exports = {
             title: 'Temple - Learning the webpack 4',
             template:'src/page-template.hbs',
             chunks:[
-                'temple'
+                'temple', 'vendors~hello-world~temple'
             ],
             description:'temple some awesome description',
             filename:'temple.html',
